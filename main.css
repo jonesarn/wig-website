@@ -57,8 +57,12 @@ html,body{
 }
 .logo{
   margin:10vh 14vh;
+  border-style:solid;
+  border-color:#FF69B4;
  
 }
 .About{
   line-height:80vh;
+  border-style:solid;
+  border-color:#FF69B4;
 }
