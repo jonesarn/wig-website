@@ -3,12 +3,14 @@
 	<style>
 		html,body{
   background-image:url("shop.png");
+  background-attachment:fixed;
+  background-repeat:no-repeat;
   margin:0;
   padding:0;
   width:100%;
   height:100vh;
   font-family:open sans,Poppins;
-  
+  overflow-x:hidden;
   
 }
 .s-one{
@@ -44,7 +46,7 @@
   
 }
 .square{
-position:absolute;
+position:relative;
 height:2.25rem;
 width:83.5rem;
 background-color:#9F00C5;
@@ -54,6 +56,7 @@ top:100px;
 box-shadow: 0px 10px 13px -7px #000000, 28px 23px 32px -16px rgba(0,0,0,0.79);
 }
 .shop{
+position:relative;
 	text-align:center;
 	text-transform:uppercase;
 	font-weight:bold;
@@ -169,8 +172,8 @@ background-color:white;
 }
 .title{
 position:relative;
-left:355px;
-top:10px;
+left:370px;
+top:-60px;
 
 color:#FF05C5;
   text-align:justify;
