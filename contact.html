@@ -1,5 +1,7 @@
 <html>
 <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 html,body{
   background-image:url("contact.png");
@@ -15,7 +17,7 @@ html,body{
 }
 .s-one{
   position:absolute;
-  width:5px;
+  width:2px;
   height:100vh;
   background:rgba(0,0,0,.6);
   left:10%;
@@ -24,63 +26,116 @@ html,body{
 }
 .s-two{
   position:absolute;
-  width:5px;
+  width:2px;
   height:100vh;
   background:rgba(0,0,0,.75);
   left:32%;
-  
+  z-index:-.5;
 } 
 .s-three{
   position:absolute;
-  width:5px;
+  width:2px;
   height:100vh;
   background:rgba(0,0,0,0.75);
   left:58%;
+   z-index:-.5;
 }
 .s-four{
   position:absolute;
-  width:5px;
+  width:2px;
   height:100vh;
   background:rgba(0,0,0,0.75);
   left:82%;
+   z-index:-.5;
   
 }
+.title{
+position:absolute;
+left:325px;
+top:-1px;
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+color:#FF05C5;
+  text-align:justify;
+  text-transform:uppercase;
+  font-weight:bold;
+  font-size:75px;
+  letter-spacing:10px;
+  text-shadow: 4px 3px 0 #7A7A7A;
+  z-index:1;
 }
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
+.home-button{
+	position:absolute;
+	top:25px;
+	left:50px;
+	width:75px;
+	border:none;
+	cursor:pointer;
+	-webkit-box-shadow: 0px 10px 13px -7px #000000, 28px 23px 32px -16px rgba(0,0,0,0.79); 
+	box-shadow: 0px 10px 13px -7px #000000, 28px 23px 32px -16px rgba(0,0,0,0.79);
 }
-input[type=submit]:hover {
-  background-color: #45a049;
+.shopping-button{
+	width:75px;
+	postion:absolute;
+	padding-top:1px;
+	margin-top:25px;
+	margin-left:150px;
+	border:none;
+	cursor:pointer;
+	-webkit-box-shadow: 0px 10px 13px -7px #000000, 28px 23px 32px -16px rgba(0,0,0,0.79); 
+	box-shadow: 0px 10px 13px -7px #000000, 28px 23px 32px -16px rgba(0,0,0,0.79);
 }
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 10px;
-  }
-  .column {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
+.form_1{
+	postion:absolute;
+	z-index:-2;
+	margin-top:80px;
+	margin-left:800px;
+	margin-right:100px;
+	margin-bottom:45px;
+	border:solid;
+	padding:10px;
+	background-color:#FF05C5;
+	
 }
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.label{
+	position:relative;
+	text-align:justify;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:23px;
+	letter-spacing:2px;
+	text-shadow: 4px 3px 0 #7A7A7A;
+	z-index:1;
+}
+input{
+position:relative;
+width:20rem;
+height:2rem;
+z-index:1;
+}
+textarea{
+position:relative;
+width:26rem;
+height:10rem;
+z-index:1;
+}
+#forms{
+position:relative;
+z-index:1;
+}
+.fb{
+position:relative;
+z-index:1;
+}
+.footer {
+   position: relative;
+   margin-top:1rem;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #00CCFF;
+   transparent:.25;
+   color: white;
+   text-align: center;
 }
 </style>
 </head>
@@ -95,31 +150,67 @@ input[type=submit]:hover {
          <div class="s-four"></div>
          <div class="s-five"></div>
       </div>
-	
-	<div class="row">
-    <div class="column">
-      <img src="/w3images/map.jpg" style="width:100%">
-    </div>
-    <div class="column">
-      <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-  </div>
-	
+	<div>
+	<span class="title">Lulu's Wigs</span>
+	<a href="lulu.html">
+			<button class="home-button"style="background-color:#FF05C5">
+				<i class="fa fa-home" style="font-size:2.5rem"></i>
+			</button>
+	</a>
+	<a href="lulu_shop.html">
+			<button  class="shopping-button" style="background-color:#FF05C5">
+				<i class="fa fa-shopping-basket"  style="font-size:2.5rem"></i>
+			</button>
+		</a>
+	</div>
+	<div class="fb-page" 
+		data-tabs="timeline,events,messages"
+		data-href="https://www.facebook.com/"
+		data-width="380" data-hide-cover="false">
+		</div>
+		
+	<div id="forms">
+		<form class="form_1">
+			<label class="label" for="first_name">First Name</label>
+				<br><br>
+				<input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+				<br><br><br>
+			<label  class="label" for="last_name">Last Name</label>
+				<br><br>
+				<input type="text" id="Last" name="Last_name" placeholder="Last Name" required>
+				<br><br><br>
+			<label class="label" for="phone">Enter your phone number:</label>
+				<br><br>
+				<input type type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(000)000-0000" required>
+				<br><br><br>
+				<label  class="label" for="message">Message</label>
+				<br><br>
+				<textarea></textarea>
+				<br></br>
+				<input type="submit" value="Submit">
+		</form>
 	</div>
 </body>
-
+<footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns">
+                            <nav id="primary" class="menu">
+                                <a class="link" href="#">For Business</a>
+                                <a class="link" href="#">Become an Instructor</a>
+                                <a class="link" href="#">Mobile Applications</a>
+                                <a class="link" href="#">Support</a>
+                                <a class="link" href="#">Help</a>
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                            <nav id="secondary" class="menu">
+                                <a class="link" href="#">About Us</a>
+                                <a class="link" href="#">Work with us</a>
+                                <a class="link" href="#">Blog</a>
+                            </nav>
+                    </div>
+            </div>
+        </div>
+</footer>
 </html>
