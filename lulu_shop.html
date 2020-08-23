@@ -13,14 +13,18 @@
   margin:0;
   padding:0;
   width:100%;
-  height:100vh;
+  height:100%;
   font-family:open sans,Poppins;
   overflow-x:hidden;
   
 }
+.container{
+	::-webkit-scrollbar-button:end{height:50px;width:30%;}
+	::-webkit-scrollbar-button:start{height:50px;width:30%;}
+}
 .s-one{
   position:absolute;
-  width:5px;
+  width:2px;
   height:100vh;
   background:rgba(0,0,0,.6);
   left:10%;
@@ -29,7 +33,7 @@
 }
 .s-two{
   position:absolute;
-  width:5px;
+  width:2px;
   height:100vh;
   background:rgba(0,0,0,.75);
   left:32%;
@@ -37,14 +41,14 @@
 } 
 .s-three{
   position:absolute;
-  width:5px;
+  width:2px;
   height:100vh;
   background:rgba(0,0,0,0.75);
   left:58%;
 }
 .s-four{
   position:absolute;
-  width:5px;
+  width:2px;
   height:100vh;
   background:rgba(0,0,0,0.75);
   left:82%;
@@ -79,7 +83,7 @@ background-color:white;
   margin: auto;
   text-align: center;
   font-family: arial;
-  top:200px;
+  top:50px;
   left:-400px;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 28px 23px 32px -16px rgba(0,0,0,0.79); 
 	box-shadow: 0px 10px 13px -7px #000000, 28px 23px 32px -16px rgba(0,0,0,0.79);
@@ -93,7 +97,7 @@ background-color:white;
 .card button {
   border: none;
   outline: 0;
-  padding: 12px;
+  padding: 10px;
   color: white;
   background-color: #000;
   text-align: center;
@@ -114,7 +118,7 @@ background-color:white;
   margin: auto;
   text-align: center;
   font-family: arial;
-  top:-161px;
+  top:-265px;
   left:-70px;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 28px 23px 32px -16px rgba(0,0,0,0.79); 
 	box-shadow: 0px 10px 13px -7px #000000, 28px 23px 32px -16px rgba(0,0,0,0.79);
@@ -149,7 +153,7 @@ background-color:white;
   margin: auto;
   text-align: center;
   font-family: arial;
-  top:-520px;
+  top:-585px;
   left:280px;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 28px 23px 32px -16px rgba(0,0,0,0.79); 
 	box-shadow: 0px 10px 13px -7px #000000, 28px 23px 32px -16px rgba(0,0,0,0.79);
@@ -178,7 +182,9 @@ background-color:white;
 .title{
 position:relative;
 left:370px;
-top:-60px;
+top:-50px;
+margin-left:-60px;
+margin-right:75px;
 
 color:#FF05C5;
   text-align:justify;
@@ -188,12 +194,72 @@ color:#FF05C5;
   letter-spacing:30px;
   text-shadow: 4px 3px 0 #7A7A7A;
 }
+.top-bar ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+}
+.top-bar ul li{
+  list-style:none;
+  line-height:40px;
+  padding:16px 32px;
+  margin:0 16px;
+}
+.home-button{
+	
+	width:75px;
+	border:none;
+	margin-top:-150px;
+	margin-left:-755px;
+	cursor:pointer;
+	-webkit-box-shadow: 0px 10px 13px -7px #000000, 28px 23px 32px -16px rgba(0,0,0,0.79); 
+	box-shadow: 0px 10px 13px -7px #000000, 28px 23px 32px -16px rgba(0,0,0,0.79);
+}
 
+.contact-button{
+	width:75px;
+	postion:relative;
+	margin-top:-175px;
+	margin-left:-750px;
+	border:none;
+	cursor:pointer;
+	-webkit-box-shadow: 0px 10px 13px -7px #000000, 28px 23px 32px -16px rgba(0,0,0,0.79); 
+	box-shadow: 0px 10px 13px -7px #000000, 28px 23px 32px -16px rgba(0,0,0,0.79);
+}
+.cart{
+	width:150px;
+	postion:relative;
+	margin-top:-250px;
+	margin-left:125px;
+	border:solid 1px;
+	cursor:pointer;
+	-webkit-box-shadow: 0px 10px 13px -7px #000000, 28px 23px 32px -16px rgba(0,0,0,0.79); 
+	box-shadow: 0px 10px 13px -7px #000000, 28px 23px 32px -16px rgba(0,0,0,0.79);
+}
+.fa-shopping-cart{
+	margin-left:-105px;
+	left:5px;
+	left:5px;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 99%;
+   background-color: #00CCFF;
+   transparent:.25;
+   color: white;
+   text-align: center;
+}
 	</style>
 </head>
 <body>
 	<div class="container">
-      
+	<!--checkout-->
+
+	
+      <!--The strips are what divides the website background-->
 	  <div class="strips">
         <div class="s-one"></div>
         <div class="s-two"></div>
@@ -201,40 +267,206 @@ color:#FF05C5;
         <div class="s-four"></div>
         <div class="s-five"></div>
      </div>
-	 <div>
-			<button class="home-button" style="background-color:#FF05C5">
-				<i class="fa fa-home" style="font-size:36px"></i>
-			</button>
-		</div>
+	
 		<div class="square">
 			<div class="shop"><span>Shop</span></div>
 		</div>
+		 <div class="top-bar">
+		 <ul>
+		 <li>
 		<h1 class="title">Lulu's Wigs</h1>
+		</li>
 		
+		<li>
+		<a href="lulu.html">
+			<button class="home-button"style="background-color:#FF05C5">
+				<i class="fa fa-home" style="font-size:2.5rem"></i>
+			</button>
+		</li>
+			</a>
+		<li>
+			<a href="contact.html">
+			<button  class="contact-button" style="background-color:#FF05C5">
+				<i class="fa fa-phone" style="font-size:2.5rem"></i>
+			</button>
+		</li>
+		</a>
+		<li>
+			<button  class="cart" style="background-color:#FF05C5">
+				<i class="fa fa-shopping-cart" style="font-size:1.5rem"></i>
+				<div class="clear"></div>
+		</li>
+		</a>
+		</ul>
+		 </div>
+		<!-- These are the cards that I use to show the wigs-->
 		<div class="card">
-			<img src="/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
-			<h1>Tailored Jeans</h1>
+			<img src="wig.jpg" alt="wig" style="width:5rem" >
+			<h1>Wig 1</h1>
 			<p class="price">$19.99</p>
-			<p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-			<p><button>Add to Cart</button></p>
+			<p>Some text type of wig</p>
+			<p><button class="add-to-cart">Add to Cart</button></p>
 		</div>
 
 		<div class="card-1">
-			<img src="/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
-			<h1>Tailored Jeans</h1>
+			<img src="wig.jpg" alt="Denim Jeans" style="width:5rem">
+			<h1>Wig 2</h1>
 			<p class="price-1">$19.99</p>
-			<p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-			<p><button>Add to Cart</button></p>
+			<p>Some text type of wig</p>
+			<p><button class="add-to-cart">Add to Cart</button></p>
 		</div>
 		
 		<div class="card-2">
-			<img src="/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
-			<h1>Tailored Jeans</h1>
+			<img src="wig.jpg" alt="Denim Jeans" style="width:5rem">
+			<h1>Wig 3</h1>
 			<p class="price-2">$19.99</p>
-			<p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-			<p><button>Add to Cart</button></p>
+			<p>Some text type of wig</p>
+			<p><button class="add-to-cart">Add to Cart</button></p>
 		</div>
-		
+		<footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns">
+                            <nav id="primary" class="menu">
+                                <a class="link" href="#">For Business</a>
+                                <a class="link" href="#">Become an Instructor</a>
+                                <a class="link" href="#">Mobile Applications</a>
+                                <a class="link" href="#">Support</a>
+                                <a class="link" href="#">Help</a>
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                            <nav id="secondary" class="menu">
+                                <a class="link" href="#">About Us</a>
+                                <a class="link" href="#">Work with us</a>
+                                <a class="link" href="#">Blog</a>
+                            </nav>
+                    </div>
+            </div>
+        </div>
+    </footer>
+		<script>
+			<script>
+	// Grab the card data
+
+let otherArray = []
+
+let stuff = document.querySelectorAll(".price")
+
+stuff.forEach((element, index) => {
+
+     let theObject = {}
+
+     let name = element.parentElement.firstElementChild.innerHTML
+
+     let image =element.parentNode.previousElementSibling.getAttribute("src")
+
+     let price = element.firstElementChild.innerHTML
+
+
+
+     theObject['productName'] = name;
+
+     theObject['price'] = price;
+
+     theObject['imageSrc'] = image;
+
+/// Add the click function to the add to cart button 
+
+     element.nextElementSibling.addEventListener("click", (e) => {
+
+          let objectId = e.target.getAttribute("data-id")
+
+          if(otherArray.indexOf(theObject) == -1){
+
+               otherArray.push(theObject) ;
+
+                addItem(theObject, objectId)
+
+          } 
+
+          event.preventDefault();
+
+     })
+
+     
+
+})
+
+// This adds the item to the table
+
+let addItem = (theObject, objectId) => {
+
+     theObject['id'] = objectId;
+
+     let tableRow = document.createElement("tr");
+
+     let tableData = document.createElement("td");
+
+     tableRow.innerHTML = 
+
+     `
+
+     <td><img src=${theObject.imageSrc} width="100%"/></td>
+
+     <td>${theObject.productName}</td>
+
+     <td>${theObject.price}</td>
+
+     <td>
+
+        <a href="#" class="remove" title="Remove from cart" data-id="${theObject.id}">X</a>
+
+    </td>
+
+     `
+
+     document.querySelectorAll("table#cart-content tbody")[0].appendChild(tableRow)
+
+     /// And activated the delete item button
+
+     buttonActivator()
+
+}
+
+
+
+let buttonActivator = () => {
+
+     let removeButtons =  document.querySelectorAll(".remove")
+
+
+
+removeButtons.forEach(el => {
+
+     el.addEventListener("click", (e)=>{
+
+          let row = e.target.parentNode.parentNode;
+
+          document.querySelectorAll("table#cart-content tbody")[0].removeChild(row)
+
+          event.preventDefault();
+
+     })
+
+})
+
+
+
+}
+
+/// For clearing the entire cart
+
+document.querySelector("a#clear-cart").addEventListener("click", ()=>{
+
+     let rows = document.querySelectorAll("table#cart-content tbody")[0].childNodes
+
+     while(rows)
+
+          document.querySelectorAll("table#cart-content tbody")[0].removeChild(rows[0])  
+
+})
+		</script>
 		
 	 </div>
 </body>
